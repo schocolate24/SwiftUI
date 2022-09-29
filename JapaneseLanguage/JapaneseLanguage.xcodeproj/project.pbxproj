@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E4C509728E5E68B000F72DD /* JapaneseLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C509628E5E68B000F72DD /* JapaneseLanguageApp.swift */; };
+		5E4C509928E5E68B000F72DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C509828E5E68B000F72DD /* ContentView.swift */; };
+		5E4C509B28E5E692000F72DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C509A28E5E692000F72DD /* Assets.xcassets */; };
+		5E4C509E28E5E692000F72DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C509D28E5E692000F72DD /* Preview Assets.xcassets */; };
+		5E4C50A528E5E701000F72DD /* HiraganaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50A428E5E701000F72DD /* HiraganaView.swift */; };
+		5E4C50A728E5E732000F72DD /* KatakanaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50A628E5E732000F72DD /* KatakanaView.swift */; };
+		5E4C50A928E5E756000F72DD /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50A828E5E756000F72DD /* SplashScreenView.swift */; };
+		5E4C50AB28E5E77C000F72DD /* HiraganaQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50AA28E5E77C000F72DD /* HiraganaQuiz.swift */; };
+		5E4C50AD28E5E79A000F72DD /* DecodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50AC28E5E79A000F72DD /* DecodeManager.swift */; };
+		5E4C50AF28E5E7FD000F72DD /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50AE28E5E7FD000F72DD /* ColorTheme.swift */; };
+		5E4C50B128E5E822000F72DD /* Katakana.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C50B028E5E822000F72DD /* Katakana.json */; };
+		5E4C50B328E5E82E000F72DD /* Hiragana.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C50B228E5E82E000F72DD /* Hiragana.json */; };
+		5E4C50B528E5E8A8000F72DD /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50B428E5E8A8000F72DD /* Audio.swift */; };
+		5E4C50B728E5E9AB000F72DD /* HiraganaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50B628E5E9AB000F72DD /* HiraganaDetailView.swift */; };
+		5E4C525628E5EE0A000F72DD /* ramen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C522828E5EE06000F72DD /* ramen.mp3 */; };
+		5E4C525728E5EE0A000F72DD /* noodles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C522928E5EE06000F72DD /* noodles.mp3 */; };
+		5E4C525828E5EE0A000F72DD /* robot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C522A28E5EE06000F72DD /* robot.mp3 */; };
+		5E4C525928E5EE0A000F72DD /* twitter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C522B28E5EE06000F72DD /* twitter.mp3 */; };
+		5E4C525A28E5EE0A000F72DD /* wine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C522C28E5EE06000F72DD /* wine.mp3 */; };
+		5E4C525B28E5EE0A000F72DD /* hibiscus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C522D28E5EE06000F72DD /* hibiscus.mp3 */; };
+		5E4C525C28E5EE0A000F72DD /* salmon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C522E28E5EE06000F72DD /* salmon.mp3 */; };
+		5E4C525D28E5EE0A000F72DD /* starfish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C522F28E5EE06000F72DD /* starfish.mp3 */; };
+		5E4C525E28E5EE0A000F72DD /* helicopter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523028E5EE06000F72DD /* helicopter.mp3 */; };
+		5E4C525F28E5EE0A000F72DD /* sausage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523128E5EE06000F72DD /* sausage.mp3 */; };
+		5E4C526028E5EE0A000F72DD /* wreath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523228E5EE07000F72DD /* wreath.mp3 */; };
+		5E4C526128E5EE0A000F72DD /* hotcake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523328E5EE07000F72DD /* hotcake.mp3 */; };
+		5E4C526228E5EE0A000F72DD /* pudding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523428E5EE07000F72DD /* pudding.mp3 */; };
+		5E4C526328E5EE0A000F72DD /* camera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523528E5EE07000F72DD /* camera.mp3 */; };
+		5E4C526428E5EE0A000F72DD /* meatball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523628E5EE07000F72DD /* meatball.mp3 */; };
+		5E4C526528E5EE0A000F72DD /* nuggets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523728E5EE07000F72DD /* nuggets.mp3 */; };
+		5E4C526628E5EE0A000F72DD /* moon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523828E5EE07000F72DD /* moon.mp3 */; };
+		5E4C526728E5EE0A000F72DD /* newyork.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523928E5EE08000F72DD /* newyork.mp3 */; };
+		5E4C526828E5EE0A000F72DD /* cosmos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523A28E5EE08000F72DD /* cosmos.mp3 */; };
+		5E4C526928E5EE0A000F72DD /* cake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523B28E5EE08000F72DD /* cake.mp3 */; };
+		5E4C526A28E5EE0A000F72DD /* nuts.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523C28E5EE08000F72DD /* nuts.mp3 */; };
+		5E4C526B28E5EE0A000F72DD /* icecream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523D28E5EE08000F72DD /* icecream.mp3 */; };
+		5E4C526C28E5EE0A000F72DD /* taxi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523E28E5EE08000F72DD /* taxi.mp3 */; };
+		5E4C526D28E5EE0A000F72DD /* uklele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C523F28E5EE08000F72DD /* uklele.mp3 */; };
+		5E4C526E28E5EE0A000F72DD /* youtube.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524028E5EE08000F72DD /* youtube.mp3 */; };
+		5E4C526F28E5EE0A000F72DD /* fruits.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524128E5EE08000F72DD /* fruits.mp3 */; };
+		5E4C527028E5EE0A000F72DD /* kiwi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524228E5EE08000F72DD /* kiwi.mp3 */; };
+		5E4C527128E5EE0A000F72DD /* hermitcrub.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524328E5EE08000F72DD /* hermitcrub.mp3 */; };
+		5E4C527228E5EE0A000F72DD /* tie.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524428E5EE08000F72DD /* tie.mp3 */; };
+		5E4C527328E5EE0A000F72DD /* spoon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524528E5EE08000F72DD /* spoon.mp3 */; };
+		5E4C527428E5EE0A000F72DD /* merrygoland.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524628E5EE09000F72DD /* merrygoland.mp3 */; };
+		5E4C527528E5EE0A000F72DD /* escalator.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524728E5EE09000F72DD /* escalator.mp3 */; };
+		5E4C527628E5EE0A000F72DD /* dorphin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524828E5EE09000F72DD /* dorphin.mp3 */; };
+		5E4C527728E5EE0A000F72DD /* macaron.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524928E5EE09000F72DD /* macaron.mp3 */; };
+		5E4C527828E5EE0A000F72DD /* monorail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524A28E5EE09000F72DD /* monorail.mp3 */; };
+		5E4C527928E5EE0A000F72DD /* wotaku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524B28E5EE09000F72DD /* wotaku.mp3 */; };
+		5E4C527A28E5EE0A000F72DD /* yogurt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524C28E5EE09000F72DD /* yogurt.mp3 */; };
+		5E4C527B28E5EE0A000F72DD /* rubicscube.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524D28E5EE09000F72DD /* rubicscube.mp3 */; };
+		5E4C527C28E5EE0A000F72DD /* sweater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524E28E5EE09000F72DD /* sweater.mp3 */; };
+		5E4C527D28E5EE0A000F72DD /* playingcards.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C524F28E5EE09000F72DD /* playingcards.mp3 */; };
+		5E4C527E28E5EE0A000F72DD /* notebook.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C525028E5EE09000F72DD /* notebook.mp3 */; };
+		5E4C527F28E5EE0A000F72DD /* lemon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C525128E5EE09000F72DD /* lemon.mp3 */; };
+		5E4C528028E5EE0A000F72DD /* cheese.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C525228E5EE0A000F72DD /* cheese.mp3 */; };
+		5E4C528128E5EE0A000F72DD /* seatbelt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C525328E5EE0A000F72DD /* seatbelt.mp3 */; };
+		5E4C528228E5EE0A000F72DD /* tv.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C525428E5EE0A000F72DD /* tv.mp3 */; };
+		5E4C528328E5EE0A000F72DD /* oil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C525528E5EE0A000F72DD /* oil.mp3 */; };
+		5E4C52B228E5EE1D000F72DD /* sennkakuki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528428E5EE13000F72DD /* sennkakuki.mp3 */; };
+		5E4C52B328E5EE1D000F72DD /* rubii.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528528E5EE13000F72DD /* rubii.mp3 */; };
+		5E4C52B428E5EE1D000F72DD /* yama.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528628E5EE14000F72DD /* yama.mp3 */; };
+		5E4C52B528E5EE1D000F72DD /* haburashi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528728E5EE14000F72DD /* haburashi.mp3 */; };
+		5E4C52B628E5EE1D000F72DD /* tomatoS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528828E5EE14000F72DD /* tomatoS.mp3 */; };
+		5E4C52B728E5EE1D000F72DD /* kimono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528928E5EE14000F72DD /* kimono.mp3 */; };
+		5E4C52B828E5EE1D000F72DD /* taoru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528A28E5EE14000F72DD /* taoru.mp3 */; };
+		5E4C52B928E5EE1D000F72DD /* ame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528B28E5EE14000F72DD /* ame.mp3 */; };
+		5E4C52BA28E5EE1D000F72DD /* houki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528C28E5EE15000F72DD /* houki.mp3 */; };
+		5E4C52BB28E5EE1D000F72DD /* gohann.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528D28E5EE15000F72DD /* gohann.mp3 */; };
+		5E4C52BC28E5EE1D000F72DD /* mugi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528E28E5EE16000F72DD /* mugi.mp3 */; };
+		5E4C52BD28E5EE1D000F72DD /* risu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528F28E5EE16000F72DD /* risu.mp3 */; };
+		5E4C52BE28E5EE1D000F72DD /* hebi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529028E5EE16000F72DD /* hebi.mp3 */; };
+		5E4C52BF28E5EE1D000F72DD /* tsukue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529128E5EE16000F72DD /* tsukue.mp3 */; };
+		5E4C52C028E5EE1D000F72DD /* chizu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529228E5EE16000F72DD /* chizu.mp3 */; };
+		5E4C52C128E5EE1D000F72DD /* mizu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529328E5EE16000F72DD /* mizu.mp3 */; };
+		5E4C52C228E5EE1D000F72DD /* niku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529428E5EE17000F72DD /* niku.mp3 */; };
+		5E4C52C328E5EE1D000F72DD /* ewokaku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529528E5EE17000F72DD /* ewokaku.mp3 */; };
+		5E4C52C428E5EE1D000F72DD /* kome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529628E5EE17000F72DD /* kome.mp3 */; };
+		5E4C52C528E5EE1D000F72DD /* shinnbunn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529728E5EE17000F72DD /* shinnbunn.mp3 */; };
+		5E4C52C628E5EE1D000F72DD /* suika.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529828E5EE17000F72DD /* suika.mp3 */; };
+		5E4C52C728E5EE1D000F72DD /* momo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529928E5EE17000F72DD /* momo.mp3 */; };
+		5E4C52C828E5EE1D000F72DD /* ono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529A28E5EE18000F72DD /* ono.mp3 */; };
+		5E4C52C928E5EE1D000F72DD /* nabe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529B28E5EE18000F72DD /* nabe.mp3 */; };
+		5E4C52CA28E5EE1D000F72DD /* ebi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529C28E5EE18000F72DD /* ebi.mp3 */; };
+		5E4C52CB28E5EE1D000F72DD /* sakuraS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529D28E5EE18000F72DD /* sakuraS.mp3 */; };
+		5E4C52CC28E5EE1D000F72DD /* usagi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529E28E5EE18000F72DD /* usagi.mp3 */; };
+		5E4C52CD28E5EE1D000F72DD /* mado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C529F28E5EE19000F72DD /* mado.mp3 */; };
+		5E4C52CE28E5EE1D000F72DD /* raionn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52A028E5EE19000F72DD /* raionn.mp3 */; };
+		5E4C52CF28E5EE1D000F72DD /* yuki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52A128E5EE19000F72DD /* yuki.mp3 */; };
+		5E4C52D028E5EE1D000F72DD /* wataame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52A228E5EE19000F72DD /* wataame.mp3 */; };
+		5E4C52D128E5EE1D000F72DD /* youfuku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52A328E5EE19000F72DD /* youfuku.mp3 */; };
+		5E4C52D228E5EE1D000F72DD /* keito.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52A428E5EE19000F72DD /* keito.mp3 */; };
+		5E4C52D328E5EE1D000F72DD /* tennshi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52A528E5EE1A000F72DD /* tennshi.mp3 */; };
+		5E4C52D428E5EE1D000F72DD /* inu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52A628E5EE1A000F72DD /* inu.mp3 */; };
+		5E4C52D528E5EE1D000F72DD /* fune.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52A728E5EE1A000F72DD /* fune.mp3 */; };
+		5E4C52D628E5EE1D000F72DD /* megane.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52A828E5EE1A000F72DD /* megane.mp3 */; };
+		5E4C52D728E5EE1D000F72DD /* nuigurumi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52A928E5EE1A000F72DD /* nuigurumi.mp3 */; };
+		5E4C52D828E5EE1D000F72DD /* rousoku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52AA28E5EE1B000F72DD /* rousoku.mp3 */; };
+		5E4C52D928E5EE1D000F72DD /* neko.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52AB28E5EE1B000F72DD /* neko.mp3 */; };
+		5E4C52DA28E5EE1D000F72DD /* kai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52AC28E5EE1B000F72DD /* kai.mp3 */; };
+		5E4C52DB28E5EE1D000F72DD /* kuma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52AD28E5EE1B000F72DD /* kuma.mp3 */; };
+		5E4C52DC28E5EE1D000F72DD /* sora.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52AE28E5EE1B000F72DD /* sora.mp3 */; };
+		5E4C52DD28E5EE1D000F72DD /* hiyoko.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52AF28E5EE1C000F72DD /* hiyoko.mp3 */; };
+		5E4C52DE28E5EE1D000F72DD /* nori.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52B028E5EE1C000F72DD /* nori.mp3 */; };
+		5E4C52DF28E5EE1D000F72DD /* reizouko.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52B128E5EE1D000F72DD /* reizouko.mp3 */; };
+		5E4C530E28E5EE2E000F72DD /* ki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52E028E5EE20000F72DD /* ki.mp3 */; };
+		5E4C530F28E5EE2E000F72DD /* so.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52E128E5EE20000F72DD /* so.mp3 */; };
+		5E4C531028E5EE2E000F72DD /* me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52E228E5EE20000F72DD /* me.mp3 */; };
+		5E4C531128E5EE2E000F72DD /* I.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52E328E5EE20000F72DD /* I.mp3 */; };
+		5E4C531228E5EE2E000F72DD /* wa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52E428E5EE21000F72DD /* wa.mp3 */; };
+		5E4C531328E5EE2E000F72DD /* wo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52E528E5EE21000F72DD /* wo.mp3 */; };
+		5E4C531428E5EE2E000F72DD /* ya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52E628E5EE22000F72DD /* ya.mp3 */; };
+		5E4C531528E5EE2E000F72DD /* ko.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52E728E5EE22000F72DD /* ko.mp3 */; };
+		5E4C531628E5EE2E000F72DD /* yo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52E828E5EE22000F72DD /* yo.mp3 */; };
+		5E4C531728E5EE2E000F72DD /* yu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52E928E5EE23000F72DD /* yu.mp3 */; };
+		5E4C531828E5EE2E000F72DD /* O.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52EA28E5EE23000F72DD /* O.mp3 */; };
+		5E4C531928E5EE2E000F72DD /* he.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52EB28E5EE23000F72DD /* he.mp3 */; };
+		5E4C531A28E5EE2E000F72DD /* nu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52EC28E5EE24000F72DD /* nu.mp3 */; };
+		5E4C531B28E5EE2E000F72DD /* ro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52ED28E5EE24000F72DD /* ro.mp3 */; };
+		5E4C531C28E5EE2E000F72DD /* te.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52EE28E5EE25000F72DD /* te.mp3 */; };
+		5E4C531D28E5EE2E000F72DD /* U.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52EF28E5EE25000F72DD /* U.mp3 */; };
+		5E4C531E28E5EE2E000F72DD /* ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52F028E5EE25000F72DD /* ru.mp3 */; };
+		5E4C531F28E5EE2E000F72DD /* tsu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52F128E5EE25000F72DD /* tsu.mp3 */; };
+		5E4C532028E5EE2E000F72DD /* E.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52F228E5EE26000F72DD /* E.mp3 */; };
+		5E4C532128E5EE2E000F72DD /* shi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52F328E5EE26000F72DD /* shi.mp3 */; };
+		5E4C532228E5EE2E000F72DD /* chi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52F428E5EE27000F72DD /* chi.mp3 */; };
+		5E4C532328E5EE2E000F72DD /* ku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52F528E5EE27000F72DD /* ku.mp3 */; };
+		5E4C532428E5EE2E000F72DD /* ma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52F628E5EE27000F72DD /* ma.mp3 */; };
+		5E4C532528E5EE2E000F72DD /* mo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52F728E5EE27000F72DD /* mo.mp3 */; };
+		5E4C532628E5EE2E000F72DD /* mu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52F828E5EE28000F72DD /* mu.mp3 */; };
+		5E4C532728E5EE2E000F72DD /* ri.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52F928E5EE28000F72DD /* ri.mp3 */; };
+		5E4C532828E5EE2E000F72DD /* se.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52FA28E5EE28000F72DD /* se.mp3 */; };
+		5E4C532928E5EE2E000F72DD /* A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52FB28E5EE28000F72DD /* A.mp3 */; };
+		5E4C532A28E5EE2E000F72DD /* no.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52FC28E5EE29000F72DD /* no.mp3 */; };
+		5E4C532B28E5EE2F000F72DD /* na.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52FD28E5EE29000F72DD /* na.mp3 */; };
+		5E4C532C28E5EE2F000F72DD /* ha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52FE28E5EE29000F72DD /* ha.mp3 */; };
+		5E4C532D28E5EE2F000F72DD /* fu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C52FF28E5EE2A000F72DD /* fu.mp3 */; };
+		5E4C532E28E5EE2F000F72DD /* ke.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530028E5EE2A000F72DD /* ke.mp3 */; };
+		5E4C532F28E5EE2F000F72DD /* ne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530128E5EE2A000F72DD /* ne.mp3 */; };
+		5E4C533028E5EE2F000F72DD /* mi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530228E5EE2B000F72DD /* mi.mp3 */; };
+		5E4C533128E5EE2F000F72DD /* nn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530328E5EE2B000F72DD /* nn.mp3 */; };
+		5E4C533228E5EE2F000F72DD /* ka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530428E5EE2C000F72DD /* ka.mp3 */; };
+		5E4C533328E5EE2F000F72DD /* hi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530528E5EE2C000F72DD /* hi.mp3 */; };
+		5E4C533428E5EE2F000F72DD /* ra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530628E5EE2C000F72DD /* ra.mp3 */; };
+		5E4C533528E5EE2F000F72DD /* re.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530728E5EE2C000F72DD /* re.mp3 */; };
+		5E4C533628E5EE2F000F72DD /* sa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530828E5EE2D000F72DD /* sa.mp3 */; };
+		5E4C533728E5EE2F000F72DD /* su.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530928E5EE2D000F72DD /* su.mp3 */; };
+		5E4C533828E5EE2F000F72DD /* ta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530A28E5EE2D000F72DD /* ta.mp3 */; };
+		5E4C533928E5EE2F000F72DD /* to.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530B28E5EE2D000F72DD /* to.mp3 */; };
+		5E4C533A28E5EE2F000F72DD /* ho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530C28E5EE2E000F72DD /* ho.mp3 */; };
+		5E4C533B28E5EE2F000F72DD /* ni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530D28E5EE2E000F72DD /* ni.mp3 */; };
+		5E4C533D28E5F716000F72DD /* KatakanaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C533C28E5F716000F72DD /* KatakanaDetailView.swift */; };
+		5E4C533F28E60858000F72DD /* KatakanaQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C533E28E60858000F72DD /* KatakanaQuiz.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E4C509328E5E68B000F72DD /* JapaneseLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4C509628E5E68B000F72DD /* JapaneseLanguageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseLanguageApp.swift; sourceTree = "<group>"; };
+		5E4C509828E5E68B000F72DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E4C509A28E5E692000F72DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E4C509D28E5E692000F72DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E4C50A428E5E701000F72DD /* HiraganaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaView.swift; sourceTree = "<group>"; };
+		5E4C50A628E5E732000F72DD /* KatakanaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaView.swift; sourceTree = "<group>"; };
+		5E4C50A828E5E756000F72DD /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		5E4C50AA28E5E77C000F72DD /* HiraganaQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaQuiz.swift; sourceTree = "<group>"; };
+		5E4C50AC28E5E79A000F72DD /* DecodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeManager.swift; sourceTree = "<group>"; };
+		5E4C50AE28E5E7FD000F72DD /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		5E4C50B028E5E822000F72DD /* Katakana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Katakana.json; path = ../../../../JSONfiles/Katakana.json; sourceTree = "<group>"; };
+		5E4C50B228E5E82E000F72DD /* Hiragana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Hiragana.json; path = ../../../../JSONfiles/Hiragana.json; sourceTree = "<group>"; };
+		5E4C50B428E5E8A8000F72DD /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		5E4C50B628E5E9AB000F72DD /* HiraganaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaDetailView.swift; sourceTree = "<group>"; };
+		5E4C522828E5EE06000F72DD /* ramen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ramen.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/ramen.mp3; sourceTree = "<group>"; };
+		5E4C522928E5EE06000F72DD /* noodles.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = noodles.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/noodles.mp3; sourceTree = "<group>"; };
+		5E4C522A28E5EE06000F72DD /* robot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = robot.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/robot.mp3; sourceTree = "<group>"; };
+		5E4C522B28E5EE06000F72DD /* twitter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = twitter.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/twitter.mp3; sourceTree = "<group>"; };
+		5E4C522C28E5EE06000F72DD /* wine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wine.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/wine.mp3; sourceTree = "<group>"; };
+		5E4C522D28E5EE06000F72DD /* hibiscus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hibiscus.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/hibiscus.mp3; sourceTree = "<group>"; };
+		5E4C522E28E5EE06000F72DD /* salmon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = salmon.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/salmon.mp3; sourceTree = "<group>"; };
+		5E4C522F28E5EE06000F72DD /* starfish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = starfish.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/starfish.mp3; sourceTree = "<group>"; };
+		5E4C523028E5EE06000F72DD /* helicopter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = helicopter.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/helicopter.mp3; sourceTree = "<group>"; };
+		5E4C523128E5EE06000F72DD /* sausage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sausage.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/sausage.mp3; sourceTree = "<group>"; };
+		5E4C523228E5EE07000F72DD /* wreath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wreath.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/wreath.mp3; sourceTree = "<group>"; };
+		5E4C523328E5EE07000F72DD /* hotcake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hotcake.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/hotcake.mp3; sourceTree = "<group>"; };
+		5E4C523428E5EE07000F72DD /* pudding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pudding.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/pudding.mp3; sourceTree = "<group>"; };
+		5E4C523528E5EE07000F72DD /* camera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = camera.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/camera.mp3; sourceTree = "<group>"; };
+		5E4C523628E5EE07000F72DD /* meatball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = meatball.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/meatball.mp3; sourceTree = "<group>"; };
+		5E4C523728E5EE07000F72DD /* nuggets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nuggets.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/nuggets.mp3; sourceTree = "<group>"; };
+		5E4C523828E5EE07000F72DD /* moon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = moon.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/moon.mp3; sourceTree = "<group>"; };
+		5E4C523928E5EE08000F72DD /* newyork.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = newyork.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/newyork.mp3; sourceTree = "<group>"; };
+		5E4C523A28E5EE08000F72DD /* cosmos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cosmos.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/cosmos.mp3; sourceTree = "<group>"; };
+		5E4C523B28E5EE08000F72DD /* cake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cake.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/cake.mp3; sourceTree = "<group>"; };
+		5E4C523C28E5EE08000F72DD /* nuts.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nuts.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/nuts.mp3; sourceTree = "<group>"; };
+		5E4C523D28E5EE08000F72DD /* icecream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = icecream.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/icecream.mp3; sourceTree = "<group>"; };
+		5E4C523E28E5EE08000F72DD /* taxi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = taxi.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/taxi.mp3; sourceTree = "<group>"; };
+		5E4C523F28E5EE08000F72DD /* uklele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = uklele.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/uklele.mp3; sourceTree = "<group>"; };
+		5E4C524028E5EE08000F72DD /* youtube.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = youtube.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/youtube.mp3; sourceTree = "<group>"; };
+		5E4C524128E5EE08000F72DD /* fruits.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fruits.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/fruits.mp3; sourceTree = "<group>"; };
+		5E4C524228E5EE08000F72DD /* kiwi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = kiwi.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/kiwi.mp3; sourceTree = "<group>"; };
+		5E4C524328E5EE08000F72DD /* hermitcrub.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hermitcrub.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/hermitcrub.mp3; sourceTree = "<group>"; };
+		5E4C524428E5EE08000F72DD /* tie.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tie.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/tie.mp3; sourceTree = "<group>"; };
+		5E4C524528E5EE08000F72DD /* spoon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = spoon.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/spoon.mp3; sourceTree = "<group>"; };
+		5E4C524628E5EE09000F72DD /* merrygoland.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = merrygoland.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/merrygoland.mp3; sourceTree = "<group>"; };
+		5E4C524728E5EE09000F72DD /* escalator.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = escalator.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/escalator.mp3; sourceTree = "<group>"; };
+		5E4C524828E5EE09000F72DD /* dorphin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dorphin.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/dorphin.mp3; sourceTree = "<group>"; };
+		5E4C524928E5EE09000F72DD /* macaron.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = macaron.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/macaron.mp3; sourceTree = "<group>"; };
+		5E4C524A28E5EE09000F72DD /* monorail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monorail.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/monorail.mp3; sourceTree = "<group>"; };
+		5E4C524B28E5EE09000F72DD /* wotaku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wotaku.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/wotaku.mp3; sourceTree = "<group>"; };
+		5E4C524C28E5EE09000F72DD /* yogurt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yogurt.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/yogurt.mp3; sourceTree = "<group>"; };
+		5E4C524D28E5EE09000F72DD /* rubicscube.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rubicscube.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/rubicscube.mp3; sourceTree = "<group>"; };
+		5E4C524E28E5EE09000F72DD /* sweater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sweater.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/sweater.mp3; sourceTree = "<group>"; };
+		5E4C524F28E5EE09000F72DD /* playingcards.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = playingcards.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/playingcards.mp3; sourceTree = "<group>"; };
+		5E4C525028E5EE09000F72DD /* notebook.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = notebook.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/notebook.mp3; sourceTree = "<group>"; };
+		5E4C525128E5EE09000F72DD /* lemon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = lemon.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/lemon.mp3; sourceTree = "<group>"; };
+		5E4C525228E5EE0A000F72DD /* cheese.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cheese.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/cheese.mp3; sourceTree = "<group>"; };
+		5E4C525328E5EE0A000F72DD /* seatbelt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = seatbelt.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/seatbelt.mp3; sourceTree = "<group>"; };
+		5E4C525428E5EE0A000F72DD /* tv.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tv.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/tv.mp3; sourceTree = "<group>"; };
+		5E4C525528E5EE0A000F72DD /* oil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = oil.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/oil.mp3; sourceTree = "<group>"; };
+		5E4C528428E5EE13000F72DD /* sennkakuki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sennkakuki.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/sennkakuki.mp3; sourceTree = "<group>"; };
+		5E4C528528E5EE13000F72DD /* rubii.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rubii.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/rubii.mp3; sourceTree = "<group>"; };
+		5E4C528628E5EE14000F72DD /* yama.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yama.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/yama.mp3; sourceTree = "<group>"; };
+		5E4C528728E5EE14000F72DD /* haburashi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = haburashi.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/haburashi.mp3; sourceTree = "<group>"; };
+		5E4C528828E5EE14000F72DD /* tomatoS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tomatoS.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/tomatoS.mp3; sourceTree = "<group>"; };
+		5E4C528928E5EE14000F72DD /* kimono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = kimono.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/kimono.mp3; sourceTree = "<group>"; };
+		5E4C528A28E5EE14000F72DD /* taoru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = taoru.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/taoru.mp3; sourceTree = "<group>"; };
+		5E4C528B28E5EE14000F72DD /* ame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ame.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/ame.mp3; sourceTree = "<group>"; };
+		5E4C528C28E5EE15000F72DD /* houki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = houki.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/houki.mp3; sourceTree = "<group>"; };
+		5E4C528D28E5EE15000F72DD /* gohann.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gohann.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/gohann.mp3; sourceTree = "<group>"; };
+		5E4C528E28E5EE16000F72DD /* mugi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mugi.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/mugi.mp3; sourceTree = "<group>"; };
+		5E4C528F28E5EE16000F72DD /* risu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = risu.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/risu.mp3; sourceTree = "<group>"; };
+		5E4C529028E5EE16000F72DD /* hebi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hebi.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/hebi.mp3; sourceTree = "<group>"; };
+		5E4C529128E5EE16000F72DD /* tsukue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tsukue.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/tsukue.mp3; sourceTree = "<group>"; };
+		5E4C529228E5EE16000F72DD /* chizu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chizu.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/chizu.mp3; sourceTree = "<group>"; };
+		5E4C529328E5EE16000F72DD /* mizu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mizu.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/mizu.mp3; sourceTree = "<group>"; };
+		5E4C529428E5EE17000F72DD /* niku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = niku.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/niku.mp3; sourceTree = "<group>"; };
+		5E4C529528E5EE17000F72DD /* ewokaku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ewokaku.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/ewokaku.mp3; sourceTree = "<group>"; };
+		5E4C529628E5EE17000F72DD /* kome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = kome.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/kome.mp3; sourceTree = "<group>"; };
+		5E4C529728E5EE17000F72DD /* shinnbunn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shinnbunn.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/shinnbunn.mp3; sourceTree = "<group>"; };
+		5E4C529828E5EE17000F72DD /* suika.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = suika.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/suika.mp3; sourceTree = "<group>"; };
+		5E4C529928E5EE17000F72DD /* momo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = momo.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/momo.mp3; sourceTree = "<group>"; };
+		5E4C529A28E5EE18000F72DD /* ono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ono.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/ono.mp3; sourceTree = "<group>"; };
+		5E4C529B28E5EE18000F72DD /* nabe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nabe.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/nabe.mp3; sourceTree = "<group>"; };
+		5E4C529C28E5EE18000F72DD /* ebi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ebi.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/ebi.mp3; sourceTree = "<group>"; };
+		5E4C529D28E5EE18000F72DD /* sakuraS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sakuraS.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/sakuraS.mp3; sourceTree = "<group>"; };
+		5E4C529E28E5EE18000F72DD /* usagi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = usagi.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/usagi.mp3; sourceTree = "<group>"; };
+		5E4C529F28E5EE19000F72DD /* mado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mado.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/mado.mp3; sourceTree = "<group>"; };
+		5E4C52A028E5EE19000F72DD /* raionn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = raionn.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/raionn.mp3; sourceTree = "<group>"; };
+		5E4C52A128E5EE19000F72DD /* yuki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yuki.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/yuki.mp3; sourceTree = "<group>"; };
+		5E4C52A228E5EE19000F72DD /* wataame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wataame.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/wataame.mp3; sourceTree = "<group>"; };
+		5E4C52A328E5EE19000F72DD /* youfuku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = youfuku.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/youfuku.mp3; sourceTree = "<group>"; };
+		5E4C52A428E5EE19000F72DD /* keito.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = keito.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/keito.mp3; sourceTree = "<group>"; };
+		5E4C52A528E5EE1A000F72DD /* tennshi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tennshi.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/tennshi.mp3; sourceTree = "<group>"; };
+		5E4C52A628E5EE1A000F72DD /* inu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = inu.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/inu.mp3; sourceTree = "<group>"; };
+		5E4C52A728E5EE1A000F72DD /* fune.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fune.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/fune.mp3; sourceTree = "<group>"; };
+		5E4C52A828E5EE1A000F72DD /* megane.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = megane.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/megane.mp3; sourceTree = "<group>"; };
+		5E4C52A928E5EE1A000F72DD /* nuigurumi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nuigurumi.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/nuigurumi.mp3; sourceTree = "<group>"; };
+		5E4C52AA28E5EE1B000F72DD /* rousoku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rousoku.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/rousoku.mp3; sourceTree = "<group>"; };
+		5E4C52AB28E5EE1B000F72DD /* neko.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = neko.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/neko.mp3; sourceTree = "<group>"; };
+		5E4C52AC28E5EE1B000F72DD /* kai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = kai.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/kai.mp3; sourceTree = "<group>"; };
+		5E4C52AD28E5EE1B000F72DD /* kuma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = kuma.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/kuma.mp3; sourceTree = "<group>"; };
+		5E4C52AE28E5EE1B000F72DD /* sora.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sora.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/sora.mp3; sourceTree = "<group>"; };
+		5E4C52AF28E5EE1C000F72DD /* hiyoko.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hiyoko.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/hiyoko.mp3; sourceTree = "<group>"; };
+		5E4C52B028E5EE1C000F72DD /* nori.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nori.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/nori.mp3; sourceTree = "<group>"; };
+		5E4C52B128E5EE1D000F72DD /* reizouko.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = reizouko.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/reizouko.mp3; sourceTree = "<group>"; };
+		5E4C52E028E5EE20000F72DD /* ki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ki.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ki.mp3; sourceTree = "<group>"; };
+		5E4C52E128E5EE20000F72DD /* so.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = so.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/so.mp3; sourceTree = "<group>"; };
+		5E4C52E228E5EE20000F72DD /* me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = me.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/me.mp3; sourceTree = "<group>"; };
+		5E4C52E328E5EE20000F72DD /* I.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = I.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/I.mp3; sourceTree = "<group>"; };
+		5E4C52E428E5EE21000F72DD /* wa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wa.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/wa.mp3; sourceTree = "<group>"; };
+		5E4C52E528E5EE21000F72DD /* wo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wo.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/wo.mp3; sourceTree = "<group>"; };
+		5E4C52E628E5EE22000F72DD /* ya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ya.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ya.mp3; sourceTree = "<group>"; };
+		5E4C52E728E5EE22000F72DD /* ko.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ko.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ko.mp3; sourceTree = "<group>"; };
+		5E4C52E828E5EE22000F72DD /* yo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yo.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/yo.mp3; sourceTree = "<group>"; };
+		5E4C52E928E5EE23000F72DD /* yu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yu.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/yu.mp3; sourceTree = "<group>"; };
+		5E4C52EA28E5EE23000F72DD /* O.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = O.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/O.mp3; sourceTree = "<group>"; };
+		5E4C52EB28E5EE23000F72DD /* he.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = he.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/he.mp3; sourceTree = "<group>"; };
+		5E4C52EC28E5EE24000F72DD /* nu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nu.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/nu.mp3; sourceTree = "<group>"; };
+		5E4C52ED28E5EE24000F72DD /* ro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ro.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ro.mp3; sourceTree = "<group>"; };
+		5E4C52EE28E5EE25000F72DD /* te.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = te.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/te.mp3; sourceTree = "<group>"; };
+		5E4C52EF28E5EE25000F72DD /* U.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = U.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/U.mp3; sourceTree = "<group>"; };
+		5E4C52F028E5EE25000F72DD /* ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ru.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ru.mp3; sourceTree = "<group>"; };
+		5E4C52F128E5EE25000F72DD /* tsu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tsu.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/tsu.mp3; sourceTree = "<group>"; };
+		5E4C52F228E5EE26000F72DD /* E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = E.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/E.mp3; sourceTree = "<group>"; };
+		5E4C52F328E5EE26000F72DD /* shi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shi.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/shi.mp3; sourceTree = "<group>"; };
+		5E4C52F428E5EE27000F72DD /* chi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chi.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/chi.mp3; sourceTree = "<group>"; };
+		5E4C52F528E5EE27000F72DD /* ku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ku.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ku.mp3; sourceTree = "<group>"; };
+		5E4C52F628E5EE27000F72DD /* ma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ma.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ma.mp3; sourceTree = "<group>"; };
+		5E4C52F728E5EE27000F72DD /* mo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mo.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/mo.mp3; sourceTree = "<group>"; };
+		5E4C52F828E5EE28000F72DD /* mu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mu.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/mu.mp3; sourceTree = "<group>"; };
+		5E4C52F928E5EE28000F72DD /* ri.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ri.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ri.mp3; sourceTree = "<group>"; };
+		5E4C52FA28E5EE28000F72DD /* se.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = se.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/se.mp3; sourceTree = "<group>"; };
+		5E4C52FB28E5EE28000F72DD /* A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = A.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/A.mp3; sourceTree = "<group>"; };
+		5E4C52FC28E5EE29000F72DD /* no.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = no.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/no.mp3; sourceTree = "<group>"; };
+		5E4C52FD28E5EE29000F72DD /* na.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = na.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/na.mp3; sourceTree = "<group>"; };
+		5E4C52FE28E5EE29000F72DD /* ha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ha.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ha.mp3; sourceTree = "<group>"; };
+		5E4C52FF28E5EE2A000F72DD /* fu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fu.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/fu.mp3; sourceTree = "<group>"; };
+		5E4C530028E5EE2A000F72DD /* ke.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ke.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ke.mp3; sourceTree = "<group>"; };
+		5E4C530128E5EE2A000F72DD /* ne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ne.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ne.mp3; sourceTree = "<group>"; };
+		5E4C530228E5EE2B000F72DD /* mi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mi.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/mi.mp3; sourceTree = "<group>"; };
+		5E4C530328E5EE2B000F72DD /* nn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nn.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/nn.mp3; sourceTree = "<group>"; };
+		5E4C530428E5EE2C000F72DD /* ka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ka.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ka.mp3; sourceTree = "<group>"; };
+		5E4C530528E5EE2C000F72DD /* hi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hi.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/hi.mp3; sourceTree = "<group>"; };
+		5E4C530628E5EE2C000F72DD /* ra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ra.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ra.mp3; sourceTree = "<group>"; };
+		5E4C530728E5EE2C000F72DD /* re.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = re.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/re.mp3; sourceTree = "<group>"; };
+		5E4C530828E5EE2D000F72DD /* sa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sa.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/sa.mp3; sourceTree = "<group>"; };
+		5E4C530928E5EE2D000F72DD /* su.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = su.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/su.mp3; sourceTree = "<group>"; };
+		5E4C530A28E5EE2D000F72DD /* ta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ta.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ta.mp3; sourceTree = "<group>"; };
+		5E4C530B28E5EE2D000F72DD /* to.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = to.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/to.mp3; sourceTree = "<group>"; };
+		5E4C530C28E5EE2E000F72DD /* ho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ho.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ho.mp3; sourceTree = "<group>"; };
+		5E4C530D28E5EE2E000F72DD /* ni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ni.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ni.mp3; sourceTree = "<group>"; };
+		5E4C533C28E5F716000F72DD /* KatakanaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaDetailView.swift; sourceTree = "<group>"; };
+		5E4C533E28E60858000F72DD /* KatakanaQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaQuiz.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E4C509028E5E68B000F72DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E4C508A28E5E68B000F72DD = {
+			isa = PBXGroup;
+			children = (
+				5E4C509528E5E68B000F72DD /* JapaneseLanguage */,
+				5E4C509428E5E68B000F72DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E4C509428E5E68B000F72DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E4C509328E5E68B000F72DD /* JapaneseLanguage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E4C509528E5E68B000F72DD /* JapaneseLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				5E4C509628E5E68B000F72DD /* JapaneseLanguageApp.swift */,
+				5E4C50AE28E5E7FD000F72DD /* ColorTheme.swift */,
+				5E4C509828E5E68B000F72DD /* ContentView.swift */,
+				5E4C50A428E5E701000F72DD /* HiraganaView.swift */,
+				5E4C50B628E5E9AB000F72DD /* HiraganaDetailView.swift */,
+				5E4C533C28E5F716000F72DD /* KatakanaDetailView.swift */,
+				5E4C50A628E5E732000F72DD /* KatakanaView.swift */,
+				5E4C50A828E5E756000F72DD /* SplashScreenView.swift */,
+				5E4C50AA28E5E77C000F72DD /* HiraganaQuiz.swift */,
+				5E4C533E28E60858000F72DD /* KatakanaQuiz.swift */,
+				5E4C50B428E5E8A8000F72DD /* Audio.swift */,
+				5E4C50AC28E5E79A000F72DD /* DecodeManager.swift */,
+				5E4C50B228E5E82E000F72DD /* Hiragana.json */,
+				5E4C50B028E5E822000F72DD /* Katakana.json */,
+				5E4C52FB28E5EE28000F72DD /* A.mp3 */,
+				5E4C52F428E5EE27000F72DD /* chi.mp3 */,
+				5E4C52F228E5EE26000F72DD /* E.mp3 */,
+				5E4C52FF28E5EE2A000F72DD /* fu.mp3 */,
+				5E4C52FE28E5EE29000F72DD /* ha.mp3 */,
+				5E4C52EB28E5EE23000F72DD /* he.mp3 */,
+				5E4C530528E5EE2C000F72DD /* hi.mp3 */,
+				5E4C530C28E5EE2E000F72DD /* ho.mp3 */,
+				5E4C52E328E5EE20000F72DD /* I.mp3 */,
+				5E4C530428E5EE2C000F72DD /* ka.mp3 */,
+				5E4C530028E5EE2A000F72DD /* ke.mp3 */,
+				5E4C52E028E5EE20000F72DD /* ki.mp3 */,
+				5E4C52E728E5EE22000F72DD /* ko.mp3 */,
+				5E4C52F528E5EE27000F72DD /* ku.mp3 */,
+				5E4C52F628E5EE27000F72DD /* ma.mp3 */,
+				5E4C52E228E5EE20000F72DD /* me.mp3 */,
+				5E4C530228E5EE2B000F72DD /* mi.mp3 */,
+				5E4C52F728E5EE27000F72DD /* mo.mp3 */,
+				5E4C52F828E5EE28000F72DD /* mu.mp3 */,
+				5E4C52FD28E5EE29000F72DD /* na.mp3 */,
+				5E4C530128E5EE2A000F72DD /* ne.mp3 */,
+				5E4C530D28E5EE2E000F72DD /* ni.mp3 */,
+				5E4C530328E5EE2B000F72DD /* nn.mp3 */,
+				5E4C52FC28E5EE29000F72DD /* no.mp3 */,
+				5E4C52EC28E5EE24000F72DD /* nu.mp3 */,
+				5E4C52EA28E5EE23000F72DD /* O.mp3 */,
+				5E4C530628E5EE2C000F72DD /* ra.mp3 */,
+				5E4C530728E5EE2C000F72DD /* re.mp3 */,
+				5E4C52F928E5EE28000F72DD /* ri.mp3 */,
+				5E4C52ED28E5EE24000F72DD /* ro.mp3 */,
+				5E4C52F028E5EE25000F72DD /* ru.mp3 */,
+				5E4C530828E5EE2D000F72DD /* sa.mp3 */,
+				5E4C52FA28E5EE28000F72DD /* se.mp3 */,
+				5E4C52F328E5EE26000F72DD /* shi.mp3 */,
+				5E4C52E128E5EE20000F72DD /* so.mp3 */,
+				5E4C530928E5EE2D000F72DD /* su.mp3 */,
+				5E4C530A28E5EE2D000F72DD /* ta.mp3 */,
+				5E4C52EE28E5EE25000F72DD /* te.mp3 */,
+				5E4C530B28E5EE2D000F72DD /* to.mp3 */,
+				5E4C52F128E5EE25000F72DD /* tsu.mp3 */,
+				5E4C52EF28E5EE25000F72DD /* U.mp3 */,
+				5E4C52E428E5EE21000F72DD /* wa.mp3 */,
+				5E4C52E528E5EE21000F72DD /* wo.mp3 */,
+				5E4C52E628E5EE22000F72DD /* ya.mp3 */,
+				5E4C52E828E5EE22000F72DD /* yo.mp3 */,
+				5E4C52E928E5EE23000F72DD /* yu.mp3 */,
+				5E4C528B28E5EE14000F72DD /* ame.mp3 */,
+				5E4C529228E5EE16000F72DD /* chizu.mp3 */,
+				5E4C529C28E5EE18000F72DD /* ebi.mp3 */,
+				5E4C529528E5EE17000F72DD /* ewokaku.mp3 */,
+				5E4C52A728E5EE1A000F72DD /* fune.mp3 */,
+				5E4C528D28E5EE15000F72DD /* gohann.mp3 */,
+				5E4C528728E5EE14000F72DD /* haburashi.mp3 */,
+				5E4C529028E5EE16000F72DD /* hebi.mp3 */,
+				5E4C52AF28E5EE1C000F72DD /* hiyoko.mp3 */,
+				5E4C528C28E5EE15000F72DD /* houki.mp3 */,
+				5E4C52A628E5EE1A000F72DD /* inu.mp3 */,
+				5E4C52AC28E5EE1B000F72DD /* kai.mp3 */,
+				5E4C52A428E5EE19000F72DD /* keito.mp3 */,
+				5E4C528928E5EE14000F72DD /* kimono.mp3 */,
+				5E4C529628E5EE17000F72DD /* kome.mp3 */,
+				5E4C52AD28E5EE1B000F72DD /* kuma.mp3 */,
+				5E4C529F28E5EE19000F72DD /* mado.mp3 */,
+				5E4C52A828E5EE1A000F72DD /* megane.mp3 */,
+				5E4C529328E5EE16000F72DD /* mizu.mp3 */,
+				5E4C529928E5EE17000F72DD /* momo.mp3 */,
+				5E4C528E28E5EE16000F72DD /* mugi.mp3 */,
+				5E4C529B28E5EE18000F72DD /* nabe.mp3 */,
+				5E4C52AB28E5EE1B000F72DD /* neko.mp3 */,
+				5E4C529428E5EE17000F72DD /* niku.mp3 */,
+				5E4C52B028E5EE1C000F72DD /* nori.mp3 */,
+				5E4C52A928E5EE1A000F72DD /* nuigurumi.mp3 */,
+				5E4C529A28E5EE18000F72DD /* ono.mp3 */,
+				5E4C52A028E5EE19000F72DD /* raionn.mp3 */,
+				5E4C52B128E5EE1D000F72DD /* reizouko.mp3 */,
+				5E4C528F28E5EE16000F72DD /* risu.mp3 */,
+				5E4C52AA28E5EE1B000F72DD /* rousoku.mp3 */,
+				5E4C528528E5EE13000F72DD /* rubii.mp3 */,
+				5E4C529D28E5EE18000F72DD /* sakuraS.mp3 */,
+				5E4C528428E5EE13000F72DD /* sennkakuki.mp3 */,
+				5E4C529728E5EE17000F72DD /* shinnbunn.mp3 */,
+				5E4C52AE28E5EE1B000F72DD /* sora.mp3 */,
+				5E4C529828E5EE17000F72DD /* suika.mp3 */,
+				5E4C528A28E5EE14000F72DD /* taoru.mp3 */,
+				5E4C52A528E5EE1A000F72DD /* tennshi.mp3 */,
+				5E4C528828E5EE14000F72DD /* tomatoS.mp3 */,
+				5E4C529128E5EE16000F72DD /* tsukue.mp3 */,
+				5E4C529E28E5EE18000F72DD /* usagi.mp3 */,
+				5E4C52A228E5EE19000F72DD /* wataame.mp3 */,
+				5E4C528628E5EE14000F72DD /* yama.mp3 */,
+				5E4C52A328E5EE19000F72DD /* youfuku.mp3 */,
+				5E4C52A128E5EE19000F72DD /* yuki.mp3 */,
+				5E4C523B28E5EE08000F72DD /* cake.mp3 */,
+				5E4C523528E5EE07000F72DD /* camera.mp3 */,
+				5E4C525228E5EE0A000F72DD /* cheese.mp3 */,
+				5E4C523A28E5EE08000F72DD /* cosmos.mp3 */,
+				5E4C524828E5EE09000F72DD /* dorphin.mp3 */,
+				5E4C524728E5EE09000F72DD /* escalator.mp3 */,
+				5E4C524128E5EE08000F72DD /* fruits.mp3 */,
+				5E4C523028E5EE06000F72DD /* helicopter.mp3 */,
+				5E4C524328E5EE08000F72DD /* hermitcrub.mp3 */,
+				5E4C522D28E5EE06000F72DD /* hibiscus.mp3 */,
+				5E4C523328E5EE07000F72DD /* hotcake.mp3 */,
+				5E4C523D28E5EE08000F72DD /* icecream.mp3 */,
+				5E4C524228E5EE08000F72DD /* kiwi.mp3 */,
+				5E4C525128E5EE09000F72DD /* lemon.mp3 */,
+				5E4C524928E5EE09000F72DD /* macaron.mp3 */,
+				5E4C523628E5EE07000F72DD /* meatball.mp3 */,
+				5E4C524628E5EE09000F72DD /* merrygoland.mp3 */,
+				5E4C524A28E5EE09000F72DD /* monorail.mp3 */,
+				5E4C523828E5EE07000F72DD /* moon.mp3 */,
+				5E4C523928E5EE08000F72DD /* newyork.mp3 */,
+				5E4C522928E5EE06000F72DD /* noodles.mp3 */,
+				5E4C525028E5EE09000F72DD /* notebook.mp3 */,
+				5E4C523728E5EE07000F72DD /* nuggets.mp3 */,
+				5E4C523C28E5EE08000F72DD /* nuts.mp3 */,
+				5E4C525528E5EE0A000F72DD /* oil.mp3 */,
+				5E4C524F28E5EE09000F72DD /* playingcards.mp3 */,
+				5E4C523428E5EE07000F72DD /* pudding.mp3 */,
+				5E4C522828E5EE06000F72DD /* ramen.mp3 */,
+				5E4C522A28E5EE06000F72DD /* robot.mp3 */,
+				5E4C524D28E5EE09000F72DD /* rubicscube.mp3 */,
+				5E4C522E28E5EE06000F72DD /* salmon.mp3 */,
+				5E4C523128E5EE06000F72DD /* sausage.mp3 */,
+				5E4C525328E5EE0A000F72DD /* seatbelt.mp3 */,
+				5E4C524528E5EE08000F72DD /* spoon.mp3 */,
+				5E4C522F28E5EE06000F72DD /* starfish.mp3 */,
+				5E4C524E28E5EE09000F72DD /* sweater.mp3 */,
+				5E4C523E28E5EE08000F72DD /* taxi.mp3 */,
+				5E4C524428E5EE08000F72DD /* tie.mp3 */,
+				5E4C525428E5EE0A000F72DD /* tv.mp3 */,
+				5E4C522B28E5EE06000F72DD /* twitter.mp3 */,
+				5E4C523F28E5EE08000F72DD /* uklele.mp3 */,
+				5E4C522C28E5EE06000F72DD /* wine.mp3 */,
+				5E4C524B28E5EE09000F72DD /* wotaku.mp3 */,
+				5E4C523228E5EE07000F72DD /* wreath.mp3 */,
+				5E4C524C28E5EE09000F72DD /* yogurt.mp3 */,
+				5E4C524028E5EE08000F72DD /* youtube.mp3 */,
+				5E4C509A28E5E692000F72DD /* Assets.xcassets */,
+				5E4C509C28E5E692000F72DD /* Preview Content */,
+			);
+			path = JapaneseLanguage;
+			sourceTree = "<group>";
+		};
+		5E4C509C28E5E692000F72DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5E4C509D28E5E692000F72DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E4C509228E5E68B000F72DD /* JapaneseLanguage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4C50A128E5E692000F72DD /* Build configuration list for PBXNativeTarget "JapaneseLanguage" */;
+			buildPhases = (
+				5E4C508F28E5E68B000F72DD /* Sources */,
+				5E4C509028E5E68B000F72DD /* Frameworks */,
+				5E4C509128E5E68B000F72DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JapaneseLanguage;
+			productName = JapaneseLanguage;
+			productReference = 5E4C509328E5E68B000F72DD /* JapaneseLanguage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E4C508B28E5E68B000F72DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					5E4C509228E5E68B000F72DD = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 5E4C508E28E5E68B000F72DD /* Build configuration list for PBXProject "JapaneseLanguage" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E4C508A28E5E68B000F72DD;
+			productRefGroup = 5E4C509428E5E68B000F72DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E4C509228E5E68B000F72DD /* JapaneseLanguage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E4C509128E5E68B000F72DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4C533A28E5EE2F000F72DD /* ho.mp3 in Resources */,
+				5E4C52C228E5EE1D000F72DD /* niku.mp3 in Resources */,
+				5E4C52D628E5EE1D000F72DD /* megane.mp3 in Resources */,
+				5E4C530F28E5EE2E000F72DD /* so.mp3 in Resources */,
+				5E4C533228E5EE2F000F72DD /* ka.mp3 in Resources */,
+				5E4C52DF28E5EE1D000F72DD /* reizouko.mp3 in Resources */,
+				5E4C52BC28E5EE1D000F72DD /* mugi.mp3 in Resources */,
+				5E4C52C028E5EE1D000F72DD /* chizu.mp3 in Resources */,
+				5E4C52BD28E5EE1D000F72DD /* risu.mp3 in Resources */,
+				5E4C526228E5EE0A000F72DD /* pudding.mp3 in Resources */,
+				5E4C527128E5EE0A000F72DD /* hermitcrub.mp3 in Resources */,
+				5E4C532C28E5EE2F000F72DD /* ha.mp3 in Resources */,
+				5E4C531F28E5EE2E000F72DD /* tsu.mp3 in Resources */,
+				5E4C50B128E5E822000F72DD /* Katakana.json in Resources */,
+				5E4C526928E5EE0A000F72DD /* cake.mp3 in Resources */,
+				5E4C526528E5EE0A000F72DD /* nuggets.mp3 in Resources */,
+				5E4C533928E5EE2F000F72DD /* to.mp3 in Resources */,
+				5E4C52D428E5EE1D000F72DD /* inu.mp3 in Resources */,
+				5E4C52D928E5EE1D000F72DD /* neko.mp3 in Resources */,
+				5E4C532628E5EE2E000F72DD /* mu.mp3 in Resources */,
+				5E4C527828E5EE0A000F72DD /* monorail.mp3 in Resources */,
+				5E4C533528E5EE2F000F72DD /* re.mp3 in Resources */,
+				5E4C50B328E5E82E000F72DD /* Hiragana.json in Resources */,
+				5E4C531128E5EE2E000F72DD /* I.mp3 in Resources */,
+				5E4C52D528E5EE1D000F72DD /* fune.mp3 in Resources */,
+				5E4C52B428E5EE1D000F72DD /* yama.mp3 in Resources */,
+				5E4C527B28E5EE0A000F72DD /* rubicscube.mp3 in Resources */,
+				5E4C527A28E5EE0A000F72DD /* yogurt.mp3 in Resources */,
+				5E4C533728E5EE2F000F72DD /* su.mp3 in Resources */,
+				5E4C533628E5EE2F000F72DD /* sa.mp3 in Resources */,
+				5E4C533328E5EE2F000F72DD /* hi.mp3 in Resources */,
+				5E4C527E28E5EE0A000F72DD /* notebook.mp3 in Resources */,
+				5E4C52CC28E5EE1D000F72DD /* usagi.mp3 in Resources */,
+				5E4C533828E5EE2F000F72DD /* ta.mp3 in Resources */,
+				5E4C526828E5EE0A000F72DD /* cosmos.mp3 in Resources */,
+				5E4C52D028E5EE1D000F72DD /* wataame.mp3 in Resources */,
+				5E4C525C28E5EE0A000F72DD /* salmon.mp3 in Resources */,
+				5E4C527D28E5EE0A000F72DD /* playingcards.mp3 in Resources */,
+				5E4C52C128E5EE1D000F72DD /* mizu.mp3 in Resources */,
+				5E4C52B528E5EE1D000F72DD /* haburashi.mp3 in Resources */,
+				5E4C52D328E5EE1D000F72DD /* tennshi.mp3 in Resources */,
+				5E4C530E28E5EE2E000F72DD /* ki.mp3 in Resources */,
+				5E4C531C28E5EE2E000F72DD /* te.mp3 in Resources */,
+				5E4C533028E5EE2F000F72DD /* mi.mp3 in Resources */,
+				5E4C531A28E5EE2E000F72DD /* nu.mp3 in Resources */,
+				5E4C531028E5EE2E000F72DD /* me.mp3 in Resources */,
+				5E4C526628E5EE0A000F72DD /* moon.mp3 in Resources */,
+				5E4C52CA28E5EE1D000F72DD /* ebi.mp3 in Resources */,
+				5E4C527528E5EE0A000F72DD /* escalator.mp3 in Resources */,
+				5E4C531828E5EE2E000F72DD /* O.mp3 in Resources */,
+				5E4C52C628E5EE1D000F72DD /* suika.mp3 in Resources */,
+				5E4C531928E5EE2E000F72DD /* he.mp3 in Resources */,
+				5E4C532128E5EE2E000F72DD /* shi.mp3 in Resources */,
+				5E4C531D28E5EE2E000F72DD /* U.mp3 in Resources */,
+				5E4C527028E5EE0A000F72DD /* kiwi.mp3 in Resources */,
+				5E4C52DA28E5EE1D000F72DD /* kai.mp3 in Resources */,
+				5E4C525B28E5EE0A000F72DD /* hibiscus.mp3 in Resources */,
+				5E4C52BB28E5EE1D000F72DD /* gohann.mp3 in Resources */,
+				5E4C525E28E5EE0A000F72DD /* helicopter.mp3 in Resources */,
+				5E4C531228E5EE2E000F72DD /* wa.mp3 in Resources */,
+				5E4C52DE28E5EE1D000F72DD /* nori.mp3 in Resources */,
+				5E4C52CD28E5EE1D000F72DD /* mado.mp3 in Resources */,
+				5E4C526D28E5EE0A000F72DD /* uklele.mp3 in Resources */,
+				5E4C525A28E5EE0A000F72DD /* wine.mp3 in Resources */,
+				5E4C526028E5EE0A000F72DD /* wreath.mp3 in Resources */,
+				5E4C525828E5EE0A000F72DD /* robot.mp3 in Resources */,
+				5E4C52D128E5EE1D000F72DD /* youfuku.mp3 in Resources */,
+				5E4C52B328E5EE1D000F72DD /* rubii.mp3 in Resources */,
+				5E4C526128E5EE0A000F72DD /* hotcake.mp3 in Resources */,
+				5E4C527928E5EE0A000F72DD /* wotaku.mp3 in Resources */,
+				5E4C526728E5EE0A000F72DD /* newyork.mp3 in Resources */,
+				5E4C533B28E5EE2F000F72DD /* ni.mp3 in Resources */,
+				5E4C525D28E5EE0A000F72DD /* starfish.mp3 in Resources */,
+				5E4C525F28E5EE0A000F72DD /* sausage.mp3 in Resources */,
+				5E4C52C828E5EE1D000F72DD /* ono.mp3 in Resources */,
+				5E4C532F28E5EE2F000F72DD /* ne.mp3 in Resources */,
+				5E4C527328E5EE0A000F72DD /* spoon.mp3 in Resources */,
+				5E4C52C728E5EE1D000F72DD /* momo.mp3 in Resources */,
+				5E4C52B628E5EE1D000F72DD /* tomatoS.mp3 in Resources */,
+				5E4C526E28E5EE0A000F72DD /* youtube.mp3 in Resources */,
+				5E4C527428E5EE0A000F72DD /* merrygoland.mp3 in Resources */,
+				5E4C52C328E5EE1D000F72DD /* ewokaku.mp3 in Resources */,
+				5E4C528128E5EE0A000F72DD /* seatbelt.mp3 in Resources */,
+				5E4C527F28E5EE0A000F72DD /* lemon.mp3 in Resources */,
+				5E4C526428E5EE0A000F72DD /* meatball.mp3 in Resources */,
+				5E4C52D728E5EE1D000F72DD /* nuigurumi.mp3 in Resources */,
+				5E4C527628E5EE0A000F72DD /* dorphin.mp3 in Resources */,
+				5E4C532A28E5EE2E000F72DD /* no.mp3 in Resources */,
+				5E4C531428E5EE2E000F72DD /* ya.mp3 in Resources */,
+				5E4C52BF28E5EE1D000F72DD /* tsukue.mp3 in Resources */,
+				5E4C509E28E5E692000F72DD /* Preview Assets.xcassets in Resources */,
+				5E4C526328E5EE0A000F72DD /* camera.mp3 in Resources */,
+				5E4C528028E5EE0A000F72DD /* cheese.mp3 in Resources */,
+				5E4C532E28E5EE2F000F72DD /* ke.mp3 in Resources */,
+				5E4C52B828E5EE1D000F72DD /* taoru.mp3 in Resources */,
+				5E4C532528E5EE2E000F72DD /* mo.mp3 in Resources */,
+				5E4C52CF28E5EE1D000F72DD /* yuki.mp3 in Resources */,
+				5E4C533428E5EE2F000F72DD /* ra.mp3 in Resources */,
+				5E4C52D228E5EE1D000F72DD /* keito.mp3 in Resources */,
+				5E4C526C28E5EE0A000F72DD /* taxi.mp3 in Resources */,
+				5E4C52DC28E5EE1D000F72DD /* sora.mp3 in Resources */,
+				5E4C532328E5EE2E000F72DD /* ku.mp3 in Resources */,
+				5E4C52BA28E5EE1D000F72DD /* houki.mp3 in Resources */,
+				5E4C531528E5EE2E000F72DD /* ko.mp3 in Resources */,
+				5E4C52BE28E5EE1D000F72DD /* hebi.mp3 in Resources */,
+				5E4C531628E5EE2E000F72DD /* yo.mp3 in Resources */,
+				5E4C52C428E5EE1D000F72DD /* kome.mp3 in Resources */,
+				5E4C52D828E5EE1D000F72DD /* rousoku.mp3 in Resources */,
+				5E4C532D28E5EE2F000F72DD /* fu.mp3 in Resources */,
+				5E4C532828E5EE2E000F72DD /* se.mp3 in Resources */,
+				5E4C532228E5EE2E000F72DD /* chi.mp3 in Resources */,
+				5E4C52B228E5EE1D000F72DD /* sennkakuki.mp3 in Resources */,
+				5E4C52CB28E5EE1D000F72DD /* sakuraS.mp3 in Resources */,
+				5E4C52C928E5EE1D000F72DD /* nabe.mp3 in Resources */,
+				5E4C527C28E5EE0A000F72DD /* sweater.mp3 in Resources */,
+				5E4C52DB28E5EE1D000F72DD /* kuma.mp3 in Resources */,
+				5E4C52CE28E5EE1D000F72DD /* raionn.mp3 in Resources */,
+				5E4C52C528E5EE1D000F72DD /* shinnbunn.mp3 in Resources */,
+				5E4C531E28E5EE2E000F72DD /* ru.mp3 in Resources */,
+				5E4C528328E5EE0A000F72DD /* oil.mp3 in Resources */,
+				5E4C525928E5EE0A000F72DD /* twitter.mp3 in Resources */,
+				5E4C526A28E5EE0A000F72DD /* nuts.mp3 in Resources */,
+				5E4C533128E5EE2F000F72DD /* nn.mp3 in Resources */,
+				5E4C525628E5EE0A000F72DD /* ramen.mp3 in Resources */,
+				5E4C509B28E5E692000F72DD /* Assets.xcassets in Resources */,
+				5E4C52B928E5EE1D000F72DD /* ame.mp3 in Resources */,
+				5E4C528228E5EE0A000F72DD /* tv.mp3 in Resources */,
+				5E4C525728E5EE0A000F72DD /* noodles.mp3 in Resources */,
+				5E4C527728E5EE0A000F72DD /* macaron.mp3 in Resources */,
+				5E4C531328E5EE2E000F72DD /* wo.mp3 in Resources */,
+				5E4C52DD28E5EE1D000F72DD /* hiyoko.mp3 in Resources */,
+				5E4C527228E5EE0A000F72DD /* tie.mp3 in Resources */,
+				5E4C531B28E5EE2E000F72DD /* ro.mp3 in Resources */,
+				5E4C532928E5EE2E000F72DD /* A.mp3 in Resources */,
+				5E4C532428E5EE2E000F72DD /* ma.mp3 in Resources */,
+				5E4C532B28E5EE2F000F72DD /* na.mp3 in Resources */,
+				5E4C52B728E5EE1D000F72DD /* kimono.mp3 in Resources */,
+				5E4C526B28E5EE0A000F72DD /* icecream.mp3 in Resources */,
+				5E4C531728E5EE2E000F72DD /* yu.mp3 in Resources */,
+				5E4C526F28E5EE0A000F72DD /* fruits.mp3 in Resources */,
+				5E4C532028E5EE2E000F72DD /* E.mp3 in Resources */,
+				5E4C532728E5EE2E000F72DD /* ri.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E4C508F28E5E68B000F72DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4C50B528E5E8A8000F72DD /* Audio.swift in Sources */,
+				5E4C50A728E5E732000F72DD /* KatakanaView.swift in Sources */,
+				5E4C50B728E5E9AB000F72DD /* HiraganaDetailView.swift in Sources */,
+				5E4C50AB28E5E77C000F72DD /* HiraganaQuiz.swift in Sources */,
+				5E4C50AD28E5E79A000F72DD /* DecodeManager.swift in Sources */,
+				5E4C50A528E5E701000F72DD /* HiraganaView.swift in Sources */,
+				5E4C533F28E60858000F72DD /* KatakanaQuiz.swift in Sources */,
+				5E4C50A928E5E756000F72DD /* SplashScreenView.swift in Sources */,
+				5E4C50AF28E5E7FD000F72DD /* ColorTheme.swift in Sources */,
+				5E4C509928E5E68B000F72DD /* ContentView.swift in Sources */,
+				5E4C533D28E5F716000F72DD /* KatakanaDetailView.swift in Sources */,
+				5E4C509728E5E68B000F72DD /* JapaneseLanguageApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5E4C509F28E5E692000F72DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E4C50A028E5E692000F72DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E4C50A228E5E692000F72DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JapaneseLanguage/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Schocolate.JapaneseLanguage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E4C50A328E5E692000F72DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JapaneseLanguage/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Schocolate.JapaneseLanguage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E4C508E28E5E68B000F72DD /* Build configuration list for PBXProject "JapaneseLanguage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4C509F28E5E692000F72DD /* Debug */,
+				5E4C50A028E5E692000F72DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E4C50A128E5E692000F72DD /* Build configuration list for PBXNativeTarget "JapaneseLanguage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4C50A228E5E692000F72DD /* Debug */,
+				5E4C50A328E5E692000F72DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E4C508B28E5E68B000F72DD /* Project object */;
+}
