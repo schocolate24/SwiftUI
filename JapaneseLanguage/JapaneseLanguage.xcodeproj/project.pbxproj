@@ -17,7 +17,6 @@
 		5E4C50AB28E5E77C000F72DD /* HiraganaQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50AA28E5E77C000F72DD /* HiraganaQuiz.swift */; };
 		5E4C50AD28E5E79A000F72DD /* DecodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50AC28E5E79A000F72DD /* DecodeManager.swift */; };
 		5E4C50AF28E5E7FD000F72DD /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50AE28E5E7FD000F72DD /* ColorTheme.swift */; };
-		5E4C50B128E5E822000F72DD /* Katakana.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C50B028E5E822000F72DD /* Katakana.json */; };
 		5E4C50B328E5E82E000F72DD /* Hiragana.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C50B228E5E82E000F72DD /* Hiragana.json */; };
 		5E4C50B528E5E8A8000F72DD /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50B428E5E8A8000F72DD /* Audio.swift */; };
 		5E4C50B728E5E9AB000F72DD /* HiraganaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C50B628E5E9AB000F72DD /* HiraganaDetailView.swift */; };
@@ -161,6 +160,7 @@
 		5E4C533B28E5EE2F000F72DD /* ni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C530D28E5EE2E000F72DD /* ni.mp3 */; };
 		5E4C533D28E5F716000F72DD /* KatakanaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C533C28E5F716000F72DD /* KatakanaDetailView.swift */; };
 		5E4C533F28E60858000F72DD /* KatakanaQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C533E28E60858000F72DD /* KatakanaQuiz.swift */; };
+		5E8A673528E6245900E10EB0 /* Katakana.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A673428E6245800E10EB0 /* Katakana.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,7 +175,6 @@
 		5E4C50AA28E5E77C000F72DD /* HiraganaQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaQuiz.swift; sourceTree = "<group>"; };
 		5E4C50AC28E5E79A000F72DD /* DecodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeManager.swift; sourceTree = "<group>"; };
 		5E4C50AE28E5E7FD000F72DD /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
-		5E4C50B028E5E822000F72DD /* Katakana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Katakana.json; path = ../../../../JSONfiles/Katakana.json; sourceTree = "<group>"; };
 		5E4C50B228E5E82E000F72DD /* Hiragana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Hiragana.json; path = ../../../../JSONfiles/Hiragana.json; sourceTree = "<group>"; };
 		5E4C50B428E5E8A8000F72DD /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		5E4C50B628E5E9AB000F72DD /* HiraganaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaDetailView.swift; sourceTree = "<group>"; };
@@ -319,6 +318,7 @@
 		5E4C530D28E5EE2E000F72DD /* ni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ni.mp3; path = ../../../MyProject/LearningJapanese/Data/aeiouSound/ni.mp3; sourceTree = "<group>"; };
 		5E4C533C28E5F716000F72DD /* KatakanaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaDetailView.swift; sourceTree = "<group>"; };
 		5E4C533E28E60858000F72DD /* KatakanaQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatakanaQuiz.swift; sourceTree = "<group>"; };
+		5E8A673428E6245800E10EB0 /* Katakana.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Katakana.json; path = ../../../../Downloads/Katakana.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,7 +364,7 @@
 				5E4C50B428E5E8A8000F72DD /* Audio.swift */,
 				5E4C50AC28E5E79A000F72DD /* DecodeManager.swift */,
 				5E4C50B228E5E82E000F72DD /* Hiragana.json */,
-				5E4C50B028E5E822000F72DD /* Katakana.json */,
+				5E8A673428E6245800E10EB0 /* Katakana.json */,
 				5E4C52FB28E5EE28000F72DD /* A.mp3 */,
 				5E4C52F428E5EE27000F72DD /* chi.mp3 */,
 				5E4C52F228E5EE26000F72DD /* E.mp3 */,
@@ -588,7 +588,6 @@
 				5E4C527128E5EE0A000F72DD /* hermitcrub.mp3 in Resources */,
 				5E4C532C28E5EE2F000F72DD /* ha.mp3 in Resources */,
 				5E4C531F28E5EE2E000F72DD /* tsu.mp3 in Resources */,
-				5E4C50B128E5E822000F72DD /* Katakana.json in Resources */,
 				5E4C526928E5EE0A000F72DD /* cake.mp3 in Resources */,
 				5E4C526528E5EE0A000F72DD /* nuggets.mp3 in Resources */,
 				5E4C533928E5EE2F000F72DD /* to.mp3 in Resources */,
@@ -644,6 +643,7 @@
 				5E4C52D128E5EE1D000F72DD /* youfuku.mp3 in Resources */,
 				5E4C52B328E5EE1D000F72DD /* rubii.mp3 in Resources */,
 				5E4C526128E5EE0A000F72DD /* hotcake.mp3 in Resources */,
+				5E8A673528E6245900E10EB0 /* Katakana.json in Resources */,
 				5E4C527928E5EE0A000F72DD /* wotaku.mp3 in Resources */,
 				5E4C526728E5EE0A000F72DD /* newyork.mp3 in Resources */,
 				5E4C533B28E5EE2F000F72DD /* ni.mp3 in Resources */,

@@ -28,11 +28,12 @@ struct ContentView: View {
                 Color.darkBackground
                     .ignoresSafeArea()
                 VStack {
-                    Spacer(minLength: 250)
+                    Spacer(minLength: 230)
                     
                     Text("🎌 Chose the content 🎌")
                         .font(.system(size: 25))
                         .fontWeight(.semibold)
+                        .padding(.bottom, 20)
                     
                     NavigationLink {
                         HiraganaView()
@@ -49,10 +50,20 @@ struct ContentView: View {
                     NavigationLink {
                         HiraganaQuiz()
                     } label: {
-                        Text("Take Quiz")
+                        Text("Quiz on Hiragana")
                     }
                     .modification()
                     .background(.blue)
+                    .cornerRadius(10)
+                    .padding(20)
+                    
+                    NavigationLink {
+                        KatakanaQuiz()
+                    } label: {
+                        Text("Quiz on Katakana")
+                    }
+                    .modification()
+                    .background(.indigo)
                     .cornerRadius(10)
                     .padding(20)
                     
