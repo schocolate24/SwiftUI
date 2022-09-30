@@ -66,7 +66,7 @@
 		5E4C528128E5EE0A000F72DD /* seatbelt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C525328E5EE0A000F72DD /* seatbelt.mp3 */; };
 		5E4C528228E5EE0A000F72DD /* tv.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C525428E5EE0A000F72DD /* tv.mp3 */; };
 		5E4C528328E5EE0A000F72DD /* oil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C525528E5EE0A000F72DD /* oil.mp3 */; };
-		5E4C52B228E5EE1D000F72DD /* sennkakuki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528428E5EE13000F72DD /* sennkakuki.mp3 */; };
+		5E4C52B228E5EE1D000F72DD /* senntakuki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528428E5EE13000F72DD /* senntakuki.mp3 */; };
 		5E4C52B328E5EE1D000F72DD /* rubii.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528528E5EE13000F72DD /* rubii.mp3 */; };
 		5E4C52B428E5EE1D000F72DD /* yama.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528628E5EE14000F72DD /* yama.mp3 */; };
 		5E4C52B528E5EE1D000F72DD /* haburashi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E4C528728E5EE14000F72DD /* haburashi.mp3 */; };
@@ -224,7 +224,7 @@
 		5E4C525328E5EE0A000F72DD /* seatbelt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = seatbelt.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/seatbelt.mp3; sourceTree = "<group>"; };
 		5E4C525428E5EE0A000F72DD /* tv.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tv.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/tv.mp3; sourceTree = "<group>"; };
 		5E4C525528E5EE0A000F72DD /* oil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = oil.mp3; path = ../../../MyProject/LearningJapanese/Data/katakanaSound/oil.mp3; sourceTree = "<group>"; };
-		5E4C528428E5EE13000F72DD /* sennkakuki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sennkakuki.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/sennkakuki.mp3; sourceTree = "<group>"; };
+		5E4C528428E5EE13000F72DD /* senntakuki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = senntakuki.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/senntakuki.mp3; sourceTree = "<group>"; };
 		5E4C528528E5EE13000F72DD /* rubii.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rubii.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/rubii.mp3; sourceTree = "<group>"; };
 		5E4C528628E5EE14000F72DD /* yama.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yama.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/yama.mp3; sourceTree = "<group>"; };
 		5E4C528728E5EE14000F72DD /* haburashi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = haburashi.mp3; path = ../../../MyProject/LearningJapanese/Data/hiraganaSound/haburashi.mp3; sourceTree = "<group>"; };
@@ -444,7 +444,7 @@
 				5E4C52AA28E5EE1B000F72DD /* rousoku.mp3 */,
 				5E4C528528E5EE13000F72DD /* rubii.mp3 */,
 				5E4C529D28E5EE18000F72DD /* sakuraS.mp3 */,
-				5E4C528428E5EE13000F72DD /* sennkakuki.mp3 */,
+				5E4C528428E5EE13000F72DD /* senntakuki.mp3 */,
 				5E4C529728E5EE17000F72DD /* shinnbunn.mp3 */,
 				5E4C52AE28E5EE1B000F72DD /* sora.mp3 */,
 				5E4C529828E5EE17000F72DD /* suika.mp3 */,
@@ -686,7 +686,7 @@
 				5E4C532D28E5EE2F000F72DD /* fu.mp3 in Resources */,
 				5E4C532828E5EE2E000F72DD /* se.mp3 in Resources */,
 				5E4C532228E5EE2E000F72DD /* chi.mp3 in Resources */,
-				5E4C52B228E5EE1D000F72DD /* sennkakuki.mp3 in Resources */,
+				5E4C52B228E5EE1D000F72DD /* senntakuki.mp3 in Resources */,
 				5E4C52CB28E5EE1D000F72DD /* sakuraS.mp3 in Resources */,
 				5E4C52C928E5EE1D000F72DD /* nabe.mp3 in Resources */,
 				5E4C527C28E5EE0A000F72DD /* sweater.mp3 in Resources */,

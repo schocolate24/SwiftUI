@@ -33,8 +33,8 @@ struct KatakanaView: View {
                         Text("Katakana(カタカナ)")
                             .foregroundColor(.white)
                             .fontWeight(.heavy)
-                            .padding(.bottom,10)
-                        
+                            .padding([.bottom,.top],10)
+
                         LazyVGrid(columns: layout) {
                             ForEach(katakana, id: \.id) { katakana in
                                 NavigationLink {

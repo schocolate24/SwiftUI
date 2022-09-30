@@ -1,7 +1,8 @@
 import SwiftUI
 
-struct HiraganaQuiz: View { let hiraganas: [Japanese] = Bundle.main.decode("Hiragana.json")
-    @State private var randomHiraganas: [Japanese]
+struct HiraganaQuiz: View {
+    let hiraganas: [Japanese] = Bundle.main.decode("Hiragana.json")
+    @State var randomHiraganas: [Japanese]
 
 init() {
     randomHiraganas = hiraganas.shuffled()
@@ -20,13 +21,14 @@ var body: some View {
     ZStack {
         Color.darkBackground
             .ignoresSafeArea()
+         
         VStack {
             Text("\(counter) / 10")
                 .padding(.top,40)
                 .foregroundColor(.white)
                 .font(.system(size:30).bold())
 
-            Text("Tap the speaker and chose the right letter")
+            Text("Tap the speaker and choose the right letter")
                 .foregroundColor(.white)
                 .font(.system(size: 20))
                 .font(.title)
@@ -47,7 +49,8 @@ var body: some View {
 
             HStack {
                 ForEach (0...2, id: \.self) { index in
-                    Button { letterTapped(index)
+                    Button {
+                        letterTapped(index)
                     } label: {
                         Text(randomHiraganas[index].letter)
                     }
@@ -79,7 +82,6 @@ var body: some View {
              .background(.orange)
              .cornerRadius(20)
              .padding([.bottom,.top])
-
         }
     }
     .alert("⭐️ Well done ⭐️", isPresented: $showingAlert) {
@@ -105,7 +107,7 @@ func letterTapped(_ aiueo: Int) {
     }
 }
 
-     func resetTheGame() {
+    func resetTheGame() {
         randomHiraganas.shuffle()
         correctAnswer = Int.random(in: 0...2)
         answer = ""

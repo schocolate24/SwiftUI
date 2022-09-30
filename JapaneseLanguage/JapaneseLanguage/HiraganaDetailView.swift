@@ -84,7 +84,7 @@ struct HiraganaDetailView: View {
                         Text("Next")
                         Image(systemName: "chevron.right")
                         .padding(.trailing)
-                    } .disabled(JapaneseID >= 46)
+                    } .disabled(JapaneseID >= 45)
                 }
                 .padding(.bottom,30)
             }

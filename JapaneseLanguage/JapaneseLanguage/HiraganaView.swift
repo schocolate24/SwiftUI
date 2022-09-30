@@ -33,7 +33,8 @@ struct HiraganaView: View {
                         Text("Hiragana(ひらがな)")
                             .foregroundColor(.white)
                             .fontWeight(.heavy)
-                            .padding(.bottom,10)
+                            .padding([.bottom,.top],10)
+                        
                         
                         LazyVGrid(columns: layout) {
                             ForEach(hiragana, id: \.id) { hiragana in

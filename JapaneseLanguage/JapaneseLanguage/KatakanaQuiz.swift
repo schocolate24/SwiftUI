@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct KatakanaQuiz: View { let katakanas: [Japanese] = Bundle.main.decode("Katakana.json")
-    @State private var randomKatakanas: [Japanese]
+    @State var randomKatakanas: [Japanese]
 
 init() {
     randomKatakanas = katakanas.shuffled()
