@@ -1,12 +1,10 @@
 import SwiftUI
 
-struct KatakanaQuiz: View { let katakanas: [Japanese] = Bundle.main.decode("Katakana.json")
-    @State var randomKatakanas: [Japanese]
-
-init() {
-    randomKatakanas = katakanas.shuffled()
-}
-
+struct KatakanaQuiz: View {
+@State private var katakanas: [Japanese] = Bundle.main.decode("Katakana.json")
+    init() {
+        katakanas.shuffle()
+    }
 @State private var correctAnswer = Int.random(in: 0...2)
 @StateObject var soundplayer = Audio()
 @State private var answer = ""
@@ -28,13 +26,13 @@ var body: some View {
 
             Text("Tap the speaker and chose the right letter")
                 .foregroundColor(.white)
-                .font(.system(size: 20))
+                .font(.system(size: 18))
                 .font(.title)
                 .padding(.bottom,80)
                 .padding(.top,40)
 
             Button {
-                soundplayer.playSounds(file: randomKatakanas[correctAnswer].voice1)
+                soundplayer.playSounds(file: katakanas[correctAnswer].voice1)
             } label: {
                 Image(systemName: "speaker.wave.3.fill")
             }
@@ -49,7 +47,7 @@ var body: some View {
                 ForEach (0...2, id: \.self) { index in
                     Button { letterTapped(index)
                     } label: {
-                        Text(randomKatakanas[index].letter)
+                        Text(katakanas[index].letter)
                     }
                 }
                 .disabled(disabe())
@@ -59,6 +57,7 @@ var body: some View {
                 .background(.cyan)
                 .cornerRadius(10)
                 .padding([.leading,.trailing])
+                .padding(.top, -15)
             }
             Spacer()
             Spacer()
@@ -79,9 +78,13 @@ var body: some View {
              .background(.orange)
              .cornerRadius(20)
              .padding([.bottom,.top])
+             .disabled(disableNext())
 
         }
-    }
+    } .onAppear {
+        katakanas = Bundle.main.decode("Katakana.json", [Japanese].self).shuffled()
+        correctAnswer = Int.random(in: 0...2)
+      }
     .alert("⭐️ Well done ⭐️", isPresented: $showingAlert) {
         Button("Retry", action: reset)
 
@@ -95,18 +98,27 @@ func letterTapped(_ aiueo: Int) {
         answer = "✨Correct✨"
         correctAnswerCounter += 1
     } else {
-        answer = "Incorrect...the answer is '\(randomKatakanas[correctAnswer].letter)'"
+        answer = "Incorrect...the answer is '\(katakanas[correctAnswer].letter)'"
     }
     counter += 1
 
     if counter == 10 {
         showingAlert = true
-        alertMessage = "You got \(correctAnswerCounter) out of 10!"
+        if counter == 10 {
+            showingAlert = true
+            if correctAnswerCounter < 5 {
+                alertMessage = "You got \(correctAnswerCounter) out of 10\nNeed more review on Katakana letters!"
+            } else if correctAnswerCounter < 8 {
+                alertMessage = "You got \(correctAnswerCounter) out of 10\nWay to go!"
+            } else {
+                alertMessage = "You got \(correctAnswerCounter) out of 10!\nExcellent!!"
+            }
+        }
     }
 }
 
      func resetTheGame() {
-        randomKatakanas.shuffle()
+        katakanas.shuffle()
         correctAnswer = Int.random(in: 0...2)
         answer = ""
     }
@@ -114,13 +126,20 @@ func letterTapped(_ aiueo: Int) {
     func reset() {
         counter = 0
         correctAnswerCounter = 0
-        randomKatakanas.shuffle()
+        katakanas.shuffle()
         correctAnswer = Int.random(in: 0...2)
         answer = ""
     }
     
     func disabe() -> Bool {
-        if answer == "✨Correct✨" || answer == "Incorrect...the answer is '\(randomKatakanas[correctAnswer].letter)'" {
+        if answer == "✨Correct✨" || answer == "Incorrect...the answer is '\(katakanas[correctAnswer].letter)'" {
+            return true
+        }
+        return false
+    }
+    
+    func disableNext() -> Bool {
+        if answer == "" {
             return true
         }
         return false

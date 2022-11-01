@@ -38,16 +38,16 @@ struct KatakanaDetailView: View {
                 .background(.white)
                 .cornerRadius(15)
                 .padding(.leading, 250)
-                .padding(.bottom, 130)
-                .padding(.top, -100)
+                .padding(.bottom, 160)
+                .padding(.top, -120)
                 
                 Spacer()
                 
                 Image(katakana[JapaneseID].image)
                     .resizable()
                     .frame(width: 300, height: 300, alignment: .center)
-                    .padding(.top, -130)
-                    .padding(.bottom,20)
+                    .padding(.top, -160)
+                    .padding(.bottom,30)
                                                
                 HStack {
                     Text(katakana[JapaneseID].example)
@@ -69,22 +69,29 @@ struct KatakanaDetailView: View {
                 Spacer()
                 
                 HStack {
-                    Button(action: {
-                        self.JapaneseID -= 1
-                    }) {
-                        Image(systemName: "chevron.left")
-                        .padding(.leading)
-                        Text("Previous")
-                            
-                    } .disabled(JapaneseID <= 0)
+                    if self.JapaneseID == 0 {
+                        
+                    } else {
+                        Button(action: {
+                            self.JapaneseID -= 1
+                        }) {
+                            Image(systemName: "chevron.left")
+                                .padding(.leading)
+                            Text("Previous")
+                        }
+                    }
                         Spacer(minLength: 150)
-                    Button(action: {
-                        self.JapaneseID += 1
-                    }) {
-                        Text("Next")
-                        Image(systemName: "chevron.right")
-                        .padding(.trailing)
-                    } .disabled(JapaneseID >= 45)
+                    if self.JapaneseID == 45 {
+                        
+                    } else {
+                        Button(action: {
+                            self.JapaneseID += 1
+                        }){
+                            Text("Next")
+                            Image(systemName: "chevron.right")
+                                .padding(.trailing)
+                        }
+                    }
                 }
                 .padding(.bottom,30)
             }

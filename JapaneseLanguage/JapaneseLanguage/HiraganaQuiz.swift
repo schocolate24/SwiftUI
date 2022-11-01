@@ -1,14 +1,11 @@
 import SwiftUI
 
 struct HiraganaQuiz: View {
-    let hiraganas: [Japanese] = Bundle.main.decode("Hiragana.json")
-    @State var randomHiraganas: [Japanese]
-
-init() {
-    randomHiraganas = hiraganas.shuffled()
-}
-
-@State private var correctAnswer = Int.random(in: 0...2)
+    @State private var hiraganas: [Japanese] = Bundle.main.decode("Hiragana.json")
+    init() {
+        hiraganas.shuffle()
+    }
+@State private var correctAnswer = Int.random(in: 0...2)  // random value
 @StateObject var soundplayer = Audio()
 @State private var answer = ""
 @State private var counter = 0
@@ -30,13 +27,13 @@ var body: some View {
 
             Text("Tap the speaker and choose the right letter")
                 .foregroundColor(.white)
-                .font(.system(size: 20))
+                .font(.system(size: 18))
                 .font(.title)
                 .padding(.bottom,80)
                 .padding(.top,40)
 
             Button {
-                soundplayer.playSounds(file: randomHiraganas[correctAnswer].voice1)
+                soundplayer.playSounds(file: hiraganas[correctAnswer].voice1)
             } label: {
                 Image(systemName: "speaker.wave.3.fill")
             }
@@ -46,22 +43,23 @@ var body: some View {
             .background(.white)
             .cornerRadius(10)
             .padding(.bottom,100)
-
+            
             HStack {
                 ForEach (0...2, id: \.self) { index in
                     Button {
                         letterTapped(index)
                     } label: {
-                        Text(randomHiraganas[index].letter)
+                        Text(hiraganas[index].letter)
                     }
                 }
-                .disabled(disabe())
+                .disabled(disable())
                 .foregroundColor(.white)
                 .font(.system(size: 35).bold())
                 .frame(width: 70, height: 70)
                 .background(.cyan)
                 .cornerRadius(10)
                 .padding([.leading,.trailing])
+                .padding(.top, -15)
             }
             Spacer()
             Spacer()
@@ -70,7 +68,7 @@ var body: some View {
                 .foregroundColor(.white)
                 .padding(.bottom,20)
                 .font(.system(size: 30))
-
+            
             Button {
                 resetTheGame()
             } label: {
@@ -82,33 +80,43 @@ var body: some View {
              .background(.orange)
              .cornerRadius(20)
              .padding([.bottom,.top])
+             .disabled(disableNext())
         }
     }
+    .onAppear {
+        hiraganas = Bundle.main.decode("Hiragana.json", [Japanese].self).shuffled()
+        correctAnswer = Int.random(in: 0...2)
+      }
     .alert("⭐️ Well done ⭐️", isPresented: $showingAlert) {
         Button("Retry", action: reset)
-
     } message: {
         Text(alertMessage)
     }
 }
 
-func letterTapped(_ aiueo: Int) {
-    if aiueo == correctAnswer {
-        answer = "✨Correct✨"
-        correctAnswerCounter += 1
-    } else {
-        answer = "Incorrect...the answer is '\(randomHiraganas[correctAnswer].letter)'"
-    }
-    counter += 1
+    func letterTapped(_ aiueo: Int) {
+        if aiueo == correctAnswer {
+            answer = "✨Correct✨"
+            correctAnswerCounter += 1
+        } else {
+            answer = "Incorrect...the answer is '\(hiraganas[correctAnswer].letter)'"
+        }
+        counter += 1
 
-    if counter == 10 {
-        showingAlert = true
-        alertMessage = "You got \(correctAnswerCounter) out of 10!"
+        if counter == 10 {
+            showingAlert = true
+            if correctAnswerCounter < 5 {
+                alertMessage = "You got \(correctAnswerCounter) out of 10\nNeed more review on Hiragana letters!"
+            } else if correctAnswerCounter < 8 {
+                alertMessage = "You got \(correctAnswerCounter) out of 10\nWay to go!"
+            } else {
+                alertMessage = "You got \(correctAnswerCounter) out of 10!\nExcellent!!"
+            }
+        }
     }
-}
 
     func resetTheGame() {
-        randomHiraganas.shuffle()
+        hiraganas.shuffle()
         correctAnswer = Int.random(in: 0...2)
         answer = ""
     }
@@ -116,13 +124,20 @@ func letterTapped(_ aiueo: Int) {
     func reset() {
         counter = 0
         correctAnswerCounter = 0
-        randomHiraganas.shuffle()
+        hiraganas.shuffle()
         correctAnswer = Int.random(in: 0...2)
         answer = ""
     }
     
-    func disabe() -> Bool {
-        if answer == "✨Correct✨" || answer == "Incorrect...the answer is '\(randomHiraganas[correctAnswer].letter)'" {
+    func disable() -> Bool {
+        if answer == "✨Correct✨" || answer == "Incorrect...the answer is '\(correctAnswer)'" {
+            return true
+        }
+        return false
+    }
+    
+    func disableNext() -> Bool {
+        if answer == "" {
             return true
         }
         return false

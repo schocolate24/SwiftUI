@@ -22,9 +22,6 @@ extension View {
 }
 
 struct ContentView: View {
-    var hiraganaQuiz = HiraganaQuiz()
-    var katakanaQuiz = KatakanaQuiz()
-    
     var body: some View {
         NavigationView {
             ZStack {
@@ -59,10 +56,7 @@ struct ContentView: View {
                     .background(.blue)
                     .cornerRadius(10)
                     .padding(20)
-                    .onTapGesture {
-                        
-                    }
-                    
+                   
                     NavigationLink {
                         KatakanaQuiz()
                     } label: {
@@ -72,16 +66,14 @@ struct ContentView: View {
                     .background(.indigo)
                     .cornerRadius(10)
                     .padding(20)
-                    .onTapGesture {
-
-                    }
-                    
+                   
                     Spacer()
                     Spacer()
                 }
             }
             .navigationTitle("")
             .preferredColorScheme(.dark)
+            
             }
       }
 }

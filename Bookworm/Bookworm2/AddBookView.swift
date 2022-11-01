@@ -34,7 +34,6 @@ struct AddBookView: View {
                         }
                     }
                 }
-                
                 Section {
                     TextEditor(text: $review)
                         
@@ -47,7 +46,6 @@ struct AddBookView: View {
                     Text("Write a review")
                     RatingView(rating: $rating)
                 }
-                
                 Section {
                     Button("Save") {
                         let newBook = Book(context: moc)
@@ -73,7 +71,6 @@ struct AddBookView: View {
             }
         }
     }
-    
     func disable() -> Bool {
         if title.isEmpty || author.isEmpty || review.isEmpty {
             return true
